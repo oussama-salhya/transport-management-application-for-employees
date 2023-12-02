@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1400.0" style="-fx-background-color: #F4D6CC;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gt.ArchiveController">
+   <children>
+      <AnchorPane layoutX="512.0" layoutY="39.0" prefHeight="194.0" prefWidth="1068.0" />
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="107.0" mnemonicParsing="false" onAction="#openGestionPerso" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text=" Gestion des personnelles" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="171.0" mnemonicParsing="false" onAction="#openGestionHorraire" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Gestion des horaires" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="238.0" mnemonicParsing="false" onAction="#openGestionArrete" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Gestion des arrêtes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="304.0" mnemonicParsing="false" onAction="#openGestionEquipe" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Gestion des équipes" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="371.0" mnemonicParsing="false" onAction="#openGestionPrime" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Gestion des primes" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="441.0" mnemonicParsing="false" onAction="#openImprimerEquipe" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Imprimer les équipes" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="2.0" layoutY="508.0" mnemonicParsing="false" onAction="#openArchive" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,100,150,1); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Archive" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="3.0" layoutY="573.0" mnemonicParsing="false" onAction="#openGestionCompte" prefHeight="50.0" prefWidth="300.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Gestion des comptes" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button defaultButton="true" layoutX="63.0" layoutY="684.0" mnemonicParsing="false" onAction="#fermer" prefHeight="42.0" prefWidth="178.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 0 0; -fx-border-color: white;" text="Déconnecter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/crossWhite.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="74.0" prefWidth="310.0" style="-fx-border-width: 3; -fx-background-color: rgb(234, 42, 48); -fx-border-radius: 15 15 0 0;" />
+      <AnchorPane layoutX="308.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="1100.0">
+         <children>
+            <ImageView fitHeight="752.0" fitWidth="1100.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/background.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tablePerso" layoutX="29.0" layoutY="269.0" prefHeight="394.0" prefWidth="1046.0" style="-fx-background-color: transparent;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="numMatColumn" prefWidth="143.9999656677246" text="Numéro du Matricule" />
+                  <TableColumn fx:id="nomColumn" minWidth="6.0" prefWidth="156.8000030517578" text="Nom" />
+                  <TableColumn fx:id="prenomColumn" minWidth="6.0" prefWidth="159.199951171875" text="Prenom" />
+                  <TableColumn fx:id="arreteColumn" prefWidth="120.79998779296875" text="Arrête" />
+                  <TableColumn fx:id="sectionColumn" prefWidth="231.20001220703125" text="Section" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <AnchorPane layoutX="35.0" layoutY="39.0" prefHeight="194.0" prefWidth="1068.0">
+               <children>
+                  <Text fill="#000000cc" layoutX="150.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Archive des équipes" textAlignment="CENTER" underline="true" wrappingWidth="708.13671875">
+                     <font>
+                        <Font name="Times New Roman Bold" size="33.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="169.0" layoutY="55.0" prefHeight="163.0" prefWidth="653.0" style="-fx-border-width: 3; -fx-background-color: rgba(255,0,0,0.8); -fx-border-radius: 15 15 0 0;">
+                     <children>
+                        <Button alignment="TOP_LEFT" layoutX="113.0" layoutY="63.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: transparent;" text="Équipe" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button alignment="TOP_LEFT" layoutX="112.0" layoutY="16.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="198.0" style="-fx-background-color: transparent;" text="Semaine" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <ChoiceBox fx:id="equipeChoiceBox" layoutX="288.0" layoutY="65.0" prefHeight="34.0" prefWidth="158.0" style="-fx-background-radius: 10 10 0 0; -fx-border-color: #daa520; -fx-border-width: 0 0 2 0; -fx-background-color: white;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="semChoiceBox" layoutX="288.0" layoutY="16.0" prefHeight="34.0" prefWidth="158.0" style="-fx-background-radius: 10 10 0 0; -fx-border-color: #daa520; -fx-border-width: 0 0 2 0; -fx-background-color: white;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ChoiceBox>
+                        <Button defaultButton="true" layoutX="484.0" layoutY="102.0" mnemonicParsing="false" onAction="#choixSem" prefHeight="42.0" prefWidth="57.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,100,0,1); -fx-border-width: 0 0 0 0; -fx-border-color: white;" text="OK" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="TOP_LEFT" layoutX="113.0" layoutY="108.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="198.0" style="-fx-background-color: transparent;" text="Année" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <ChoiceBox fx:id="anneeChoiceBox" layoutX="288.0" layoutY="110.0" prefHeight="34.0" prefWidth="158.0" style="-fx-background-radius: 10 10 0 0; -fx-border-color: #daa520; -fx-border-width: 0 0 2 0; -fx-background-color: white;">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </ChoiceBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="390.0" layoutY="684.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/checkWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button alignment="CENTER" defaultButton="true" layoutX="288.0" layoutY="660.0" mnemonicParsing="false" onAction="#openArchivePrime" prefHeight="50.0" prefWidth="495.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: rgb(255,0,0,0.8); -fx-border-width: 0 0 3 0; -fx-border-color: white;" text="Archive des primes" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="357.0" layoutY="674.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/checkWhite.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/UserWhite.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="20.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/waitWhite.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="20.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/CandidatureWhite.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="20.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/groupUsersWhite.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/checkWhite.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/imprimerWhite.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="21.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/restaureMdpWhite.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="19.0" layoutY="585.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/password.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
