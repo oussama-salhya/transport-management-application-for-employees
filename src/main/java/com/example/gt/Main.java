@@ -43,7 +43,6 @@ public class Main extends Application {
         //		login.fxml
 
         // Get the current date
-        System.out.println("hey from main");
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         Scene scene = new Scene(root);
         primaryStage.initStyle(StageStyle.UNDECORATED);
