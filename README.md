@@ -2,10 +2,7 @@ Creating a user-friendly app for efficient management of teams, schedules, works
 
 ## Demo
 
-Check out the live demo of CHATOUUS :
-
-![Video Demo](https://drive.google.com/file/d/1r4hNsM2F6JMP59AZ_4A0goh6FCgCzbFQ/view?usp=sharing)
-
+https://github.com/oussama-salhya/transport-management-application-for-employees/assets/113974700/a0ef5d9e-f379-401c-96d0-71f604c9d702
 
 ### Features
 
