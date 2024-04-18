@@ -4,7 +4,8 @@ Creating a user-friendly app for efficient management of teams, schedules, works
 
 Check out the live demo of CHATOUUS :
 
-https://drive.google.com/file/d/1r4hNsM2F6JMP59AZ_4A0goh6FCgCzbFQ/view?usp=sharing
+![Video Demo](https://drive.google.com/file/d/1r4hNsM2F6JMP59AZ_4A0goh6FCgCzbFQ/view?usp=sharing)
+
 
 ### Features
 
