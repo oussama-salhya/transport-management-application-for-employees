@@ -1,5 +1,11 @@
 Creating a user-friendly app for efficient management of teams, schedules, workshop leads, transport allowances, and employee assignments. Archive and print features enhance data management and practical usage.
 
+## Demo
+
+Check out the live demo of CHATOUUS :
+
+https://drive.google.com/file/d/1r4hNsM2F6JMP59AZ_4A0goh6FCgCzbFQ/view?usp=sharing
+
 ### Features
 
 The application provides the following features:
