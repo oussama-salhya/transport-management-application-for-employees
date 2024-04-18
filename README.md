@@ -1,4 +1,4 @@
-The project is an application that manages the transportation of employees.
+Creating a user-friendly app for efficient management of teams, schedules, workshop leads, transport allowances, and employee assignments. Archive and print features enhance data management and practical usage.
 
 ### Features
 
